@@ -1,0 +1,41 @@
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #212528;
+    width: 5%;
+    max-height: 100%;
+}
+
+.main-nav__top {
+    position: relative;
+    height: 50%;
+}
+
+.main-nav .fa {
+    position: absolute;
+    left: 30%;
+    color: #fff;
+    font-size: 30px;
+}
+
+.main-nav .fa-envelope-open {
+    top: 45px;  
+}
+
+.main-nav .fa-file-text {
+    top: 120px;
+    left: 35%;
+}
+
+.main-nav__bottom {
+    position: relative;
+    height: 50%;
+}
+
+.main-nav__bottom .fa-question-circle {
+    bottom: 60px;
+}
+
+.main-nav__bottom .fa-user-circle {
+    bottom: 120px;
+}

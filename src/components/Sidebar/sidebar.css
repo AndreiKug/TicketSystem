@@ -1,0 +1,25 @@
+.issues-sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    background-color: #E8E9EB;
+}
+
+.issues-sidebar ul {
+    padding-top: 20px;
+    padding-left: 15px;
+	list-style: none;
+    font-size: 14px;
+}
+
+.issues-sidebar ul li {
+    padding: 7px 0;
+}
+
+.issues-sidebar__my-issues {
+    border-bottom: 2px solid #DBDCDD;
+}

@@ -1,0 +1,138 @@
+.ticket-content {
+    display: flex;
+    flex-direction: column;
+    width: 45%;   
+}
+
+.ticket-content__wrapper {
+    -webkit-box-shadow: 4px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 6px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 6px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.ticket-content__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    background-color: #F8F9F9;
+    border-top: 1px solid #DBDCDD;
+    border-bottom: 1px solid #DBDCDD;
+}
+
+.ticket-content__header a {
+    text-decoration: none;
+    color: #3D80CC;
+}
+
+.ticket-content__author {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+    padding: 15px 0;
+    color: #4B545A;
+    border-bottom: 1px solid #E8E9EB;
+}
+
+.ticket-content__tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    margin: 10px 25px;
+}
+
+.ticket-content__tags span {
+    display: inline-block;
+    padding: 5px 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    color: #fff;
+    background-color: #859199;
+}
+
+
+
+
+
+.tickets-container {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    overflow-y: scroll;
+    font-size: 15px;
+    color: #576066;
+}
+
+.ticket-message__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+    margin: 10px 5px;
+    border: 1px solid #D4D7D9;
+}
+
+.ticket-message__wrapper:nth-child(1) {
+    margin-top: 30px;
+}
+
+.ticket-message__admin {
+    background-color: #F8F9F9;
+}
+
+.ticket-message__user {
+    background-color: #EBF4FF;
+}
+
+.ticket-message {
+    padding: 10px 10px;
+}
+
+.admin {
+    align-self: flex-end;
+}
+
+
+
+
+.ticket-message__author {
+    padding: 10px 10px;
+    font-size: 12px;
+    font-style: italic;
+}
+
+
+
+.ticket-reply {
+    position: relative;
+    height: 120px;
+}
+
+.ticket-reply textarea {
+    padding: 10px 10px;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    font-size: 14px;
+    background-color: #fff;
+
+    -webkit-box-shadow: -1px -1px 16px 0px rgba(34, 60, 80, 0.1) inset;
+    -moz-box-shadow: -1px -1px 16px 0px rgba(34, 60, 80, 0.1) inset;
+    box-shadow: -1px -1px 16px 0px rgba(34, 60, 80, 0.1) inset;
+}
+
+.ticket-reply__button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+    display: block;
+    padding: 10px 15px;
+
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #3D80CC;
+    border-radius: 5px;
+
+}

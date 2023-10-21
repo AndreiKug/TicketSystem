@@ -1,0 +1,78 @@
+.tickets {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    border: 1px solid #DBDCDD;
+    overflow-y: scroll; 
+}
+
+.tickets__list {
+    height: 100%;
+}
+
+.tickets__list ul {
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.tickets__list ul li {
+    position: relative;
+    display: block;
+    padding: 10px 10px;
+    padding-left: 30px;
+    font-size: 14px;
+    border-bottom: 1px solid #DBDCDD;
+}
+
+.tickets__list ul li input {
+    position: absolute;
+    top: 29px;
+    left: 4px;
+}
+
+.tickets__list .ticket__container {
+    text-decoration: none;
+    line-height: 1.5em;
+    color: #859FC4;
+}
+
+.ticket__header {
+    margin-bottom: 10px;
+    color: #383F44;
+}
+
+.ticket__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.ticket__tags span {
+    display: inline-block;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 11px;
+    color: #8591A3;
+    background-color: #E8E9EB;
+}
+
+.ticket__timer span {
+    display: inline-block;
+    padding: 2px 5px;
+    min-width: 200px;
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    color: #723F44;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;    
+}
+
+.ticket__timer--new span {
+    background-color: #FFD1D1;
+}
+
+.ticket__timer--answered span{
+    background-color: #FFE9BC;
+}
