@@ -4,7 +4,7 @@ import SearchPanel from '../SearchPanel/SearchPanel';
 import './ticketsList.css';
 import mongoService from '../../services/mongoService';
 
-const TicketsList = () => {
+const TicketsList = (props) => {
 
     const [users, setUsers] = useState([]);
 
@@ -31,8 +31,8 @@ const TicketsList = () => {
             const formattedDate = `${date.getFullYear()}-${(date.getMonth() + 1).toString().padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')} ${date.getHours().toString().padStart(2, '0')}:${date.getMinutes().toString().padStart(2, '0')}:${date.getSeconds().toString().padStart(2, '0')}`;
             
 
-            return (
-                <li key={item._id} >                
+            return (              
+                <li key={item._id} onClick={() => {props.onTicketSelected(item._id)}}>                
                     <input type="checkbox" />
                     <div className="ticket__container">
                         <div className="ticket__header">{item.question.length > 60 ? item.question.slice(0, 60): item.question}</div>

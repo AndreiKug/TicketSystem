@@ -1,0 +1,21 @@
+.ticket-no-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    background-color: #E8E9EB;
+}
+
+.ticket-no-content i {
+    display: block;
+    margin: 0 auto;
+    padding-top: 40%;
+    font-size: 150px;
+    color: #859199;
+}
+
+.ticket-no-content p {
+    padding-top: 15px;
+    text-align: center;
+    color: #8591AE;
+    font-size: 14px;
+}

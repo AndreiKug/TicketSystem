@@ -26,6 +26,10 @@
     border-bottom: 1px solid #DBDCDD;
 }
 
+.tickets__list ul li:hover {
+    cursor: pointer;
+}
+
 .tickets__list ul li input {
     position: absolute;
     top: 29px;
